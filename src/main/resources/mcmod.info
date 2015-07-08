@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hellfiresplayground",
+  "name": "Hellfire's Playground",
+  "description": "Doom, death and destruction",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["TheNumenorean"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,16 @@
+!*.*
+/bin
+
+*.classpath
+*.project
+.gradle/
+.settings/
+build/
+eclipse/
+
+
+*.iml
+*.iws
+*.ipr
+*.idea/
+src/main/resources/Thumbs.db
