@@ -1,0 +1,4 @@
+{
+  "phaser1": {"category": "master","sounds": [{"name": "disrupter1","stream": false}]},
+  "disrupter1": {"category": "master","sounds": [{"name": "disrupter1","stream": false}]}
+}
