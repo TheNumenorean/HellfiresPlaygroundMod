@@ -2,8 +2,8 @@ package net.thenumenorean.hellfiresplayground.blocks.ores;
 
 public class BauxiteOre extends Ore {
 
-	public BauxiteOre(int par1) {
-		super(par1, "Bauxite", 1);
+	public BauxiteOre() {
+		super("Bauxite", 1);
 
 		setHardness(1.0F);
 	}

@@ -5,24 +5,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class HellfiresPlaygroundOres {
 
-	public static Ore dilithium_ore;
-	public static Ore duranium_ore;
-	public static Ore tritanium_ore;
 	public static Ore bauxite_ore;
-	public static Ore chromite_ore;
-	public static Ore platinum_ore;
-	public static Ore titanium_ore;
-	public static Ore tungsten_ore;
-	public static Ore invisible_ore;
-	public static Ore nitrium_ore;
 
 	/**
 	 * Initializes ore blocks
 	 * 
-	 * @param startID
-	 *            First ID to use as a default id for blocks
-	 * @param conf
-	 *            Configuration to pull block data from
 	 * @param ct
 	 *            Creative tab to add blocks to (Should probably not be used
 	 *            this way)
