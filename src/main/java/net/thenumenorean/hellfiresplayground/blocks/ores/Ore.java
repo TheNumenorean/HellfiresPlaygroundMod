@@ -2,8 +2,6 @@ package net.thenumenorean.hellfiresplayground.blocks.ores;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraftforge.common.MinecraftForge;
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 /**
  * A class used to represent an ore, it is primarily for simplifying ore
@@ -30,16 +28,15 @@ public abstract class Ore extends Block {
 	 * @param harvestLevel
 	 *            HarvestLevel for the block, 0 - 3 for wood - diamond pickaxes
 	 */
-	public Ore(int id, String name, int harvestLevel) {
-		super(id, Material.rock);
+	public Ore(String name, int harvestLevel) {
+		super(Material.rock);
 
 		String shortname = name.replaceFirst(name.substring(0, 1), name.substring(0, 1).toLowerCase());
 
-		setStepSound(Block.soundStoneFootstep);
-		setUnlocalizedName(shortname + "Ore");
-		setTextureName("hellfiresplayground:ore" + name);
-		LanguageRegistry.addName(this, name + " Ore");
-		MinecraftForge.setBlockHarvestLevel(this, "pickaxe", harvestLevel);
+		setStepSound(Block.soundTypeStone);
+		setBlockName(shortname + "Ore");
+		setBlockTextureName("hellfiresplayground:ore" + name);
+		this.setHarvestLevel("pickaxe", harvestLevel);
 	}
 
 	/**
@@ -76,7 +73,7 @@ public abstract class Ore extends Block {
 	 * 
 	 * @param dimension
 	 *            The dimension of the world its in.
-	 * @return How many blocks on aveage to generate
+	 * @return How many blocks on average to generate
 	 */
 	public abstract int blocksPerVein(int dimension);
 
