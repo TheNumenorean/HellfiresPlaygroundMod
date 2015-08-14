@@ -2,7 +2,6 @@ package net.thenumenorean.hellfiresplayground.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.fluids.Fluid;
 import net.thenumenorean.hellfiresplayground.blocks.machines.LaserElectronManipulator;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -16,14 +15,7 @@ public class HellfiresPlaygroundBlocks {
 
 	public static Block transparent_aluminum;
 	public static Block aluminum_block;
-	public static Block refinery;
 	public static Block laser_electron_manipulator;
-	public static Fluid antimatter_fluid;
-	public static Block antimatter_fluid_block;
-	public static Block phaser_drill;
-	public static Block electric_cable;
-	public static Block radioisotopic_generator;
-	public static Block replicator;
 
 	/**
 	 * Initializes non-ore blocks
