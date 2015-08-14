@@ -1,8 +1,8 @@
 package net.thenumenorean.hellfiresplayground;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.thenumenorean.hellfiresplayground.blocks.ores.HellfiresPlaygroundOres;
 import net.thenumenorean.hellfiresplayground.items.HellfiresPlaygroundItems;
 
 public class HellfiresPlaygroundCreativeTab extends CreativeTabs {
@@ -18,6 +18,11 @@ public class HellfiresPlaygroundCreativeTab extends CreativeTabs {
 	@Override
 	public ItemStack getIconItemStack() {
 		return new ItemStack(HellfiresPlaygroundItems.phaser);
+	}
+
+	@Override
+	public Item getTabIconItem() {
+		return HellfiresPlaygroundItems.phaser;
 	}
 
 }
