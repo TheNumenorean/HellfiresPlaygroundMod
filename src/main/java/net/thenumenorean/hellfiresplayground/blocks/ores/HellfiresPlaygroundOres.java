@@ -1,7 +1,6 @@
 package net.thenumenorean.hellfiresplayground.blocks.ores;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.common.Configuration;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class HellfiresPlaygroundOres {
@@ -29,35 +28,24 @@ public class HellfiresPlaygroundOres {
 	 *            this way)
 	 * @return The last id that wasn't used
 	 */
-	public static int initialize(int startID, Configuration conf, CreativeTabs ct, OreGenerator gen) {
-		dilithium_ore = new DilithiumOre(conf.getBlock("DilithiumOre", startID++).getInt());
-		registerOre(dilithium_ore, ct, gen);
+	public static void initialize(CreativeTabs ct, OreGenerator gen) {
+		registerOre(dilithium_ore = new DilithiumOre(), ct, gen);
 
-		tritanium_ore = new TritaniumOre(conf.getBlock("TritaniumOre", startID++).getInt());
-		registerOre(tritanium_ore, ct, gen);
+		registerOre(tritanium_ore = new TritaniumOre(), ct, gen);
 
-		duranium_ore = new DuraniumOre(conf.getBlock("DuraniumOre", startID++).getInt());
-		registerOre(duranium_ore, ct, gen);
+		registerOre(duranium_ore = new DuraniumOre(), ct, gen);
 
-		bauxite_ore = new BauxiteOre(conf.getBlock("BauxiteOre", startID++).getInt());
-		registerOre(bauxite_ore, ct, gen);
+		registerOre(bauxite_ore = new BauxiteOre(), ct, gen);
 
-		chromite_ore = new ChromiteOre(conf.getBlock("ChromiteOre", startID++).getInt());
-		registerOre(chromite_ore, ct, gen);
+		registerOre(chromite_ore = new ChromiteOre(), ct, gen);
 
-		titanium_ore = new TitaniumOre(conf.getBlock("TitaniumOre", startID++).getInt());
-		registerOre(titanium_ore, ct, gen);
+		registerOre(titanium_ore = new TitaniumOre(), ct, gen);
 
-		tungsten_ore = new TungstenOre(conf.getBlock("TungstenOre", startID++).getInt());
-		registerOre(tungsten_ore, ct, gen);
-		
-		invisible_ore = new InvisibleOre(conf.getBlock("InvisibleOre", startID++).getInt());
-		registerOre(invisible_ore, ct, gen);
+		registerOre(tungsten_ore = new TungstenOre(), ct, gen);
 
-		nitrium_ore = new NitriumOre(conf.getBlock("NitriumOre", startID++).getInt());
-		registerOre(nitrium_ore, ct, gen);
+		registerOre(invisible_ore = new InvisibleOre(), ct, gen);
 
-		return startID;
+		registerOre(nitrium_ore = new NitriumOre(), ct, gen);
 	}
 
 	/**
