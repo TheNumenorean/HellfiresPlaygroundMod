@@ -4,9 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fluids.Fluid;
 import net.thenumenorean.hellfiresplayground.blocks.machines.LaserElectronManipulator;
-import net.thenumenorean.hellfiresplayground.blocks.machines.PhaserDrill;
-import net.thenumenorean.hellfiresplayground.blocks.machines.RadioisotopicGenerator;
-import net.thenumenorean.hellfiresplayground.blocks.machines.replicator.Replicator;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
@@ -42,23 +39,8 @@ public class HellfiresPlaygroundBlocks {
 	 */
 	public static void initialize(CreativeTabs ct) {
 
-		// Liquids
-		antimatter_fluid = new AntimatterFluid();
-
-		antimatter_fluid_block = new BlockAntimatter().setCreativeTab(ct);
-		GameRegistry.registerBlock(antimatter_fluid_block, "antimatterFluidBlock");
-
 		laser_electron_manipulator = new LaserElectronManipulator().setCreativeTab(ct);
 		GameRegistry.registerBlock(laser_electron_manipulator, "laserElectronManipulator");
-
-		radioisotopic_generator = new RadioisotopicGenerator().setCreativeTab(ct);
-		GameRegistry.registerBlock(radioisotopic_generator, "radioisotopicGenerator");
-
-		phaser_drill = new PhaserDrill().setCreativeTab(ct);
-		GameRegistry.registerBlock(phaser_drill, "phaserDrill");
-
-		replicator = new Replicator().setCreativeTab(ct);
-		GameRegistry.registerBlock(replicator, "replicator");
 
 		// Others
 		transparent_aluminum = new TransparentAlmuninum().setCreativeTab(ct);

@@ -29,23 +29,9 @@ public class HellfiresPlaygroundOres {
 	 * @return The last id that wasn't used
 	 */
 	public static void initialize(CreativeTabs ct, OreGenerator gen) {
-		registerOre(dilithium_ore = new DilithiumOre(), ct, gen);
-
-		registerOre(tritanium_ore = new TritaniumOre(), ct, gen);
-
-		registerOre(duranium_ore = new DuraniumOre(), ct, gen);
 
 		registerOre(bauxite_ore = new BauxiteOre(), ct, gen);
 
-		registerOre(chromite_ore = new ChromiteOre(), ct, gen);
-
-		registerOre(titanium_ore = new TitaniumOre(), ct, gen);
-
-		registerOre(tungsten_ore = new TungstenOre(), ct, gen);
-
-		registerOre(invisible_ore = new InvisibleOre(), ct, gen);
-
-		registerOre(nitrium_ore = new NitriumOre(), ct, gen);
 	}
 
 	/**
